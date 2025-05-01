@@ -96,10 +96,8 @@ class Solution
     private static boolean checkSquare(int[][] sudoku){
     	for(int i = 0 ; i < sudoku.length; i += 3){
             for(int j = 0 ; j < sudoku[0].length;j += 3){
-            	if(checkSmallSquare(i, j, sudoku)){ 
-                     continue;
-                }else{
-                    return false; //가로x 시작점, 세로 시작점, 배열 
+            	if(!checkSmallSquare(i, j, sudoku)){
+                	return false;
                 }
         	}
         }
