@@ -74,11 +74,12 @@ class Solution
         printResult(check);
     }
     private static void printResult(boolean[] check){
+        StringBuilder sb = new StringBuilder();
 		for(int i = 0; i < check.length; i++){
         	if(check[i] == false){
-            	System.out.print( (i+1) +" ");
+                sb.append((i+1) + " " );
             }
         }
-        System.out.println();
+        System.out.println(sb);
     }
 }
