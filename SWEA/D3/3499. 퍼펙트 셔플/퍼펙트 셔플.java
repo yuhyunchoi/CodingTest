@@ -64,8 +64,8 @@ class Solution
 	}
     private static void sol(Scanner sc){
     	int N = sc.nextInt();
-		List<String> upCard = new LinkedList<>();
-        List<String> downCard = new LinkedList<>();
+		List<String> upCard = new ArrayList<>();
+        List<String> downCard = new ArrayList<>();
       	String[] shuffledCard = new String[N];
         int mid = (N % 2 == 0) ? N/2 : N/2 + 1;
         for(int i = 0; i < mid;i++){
